@@ -1,0 +1,87 @@
+
+<html>
+
+<head>
+	<style>
+		body {
+			background: linear-gradient(-45deg, #FFBDA9, #FFEDF4, #B3EBFF, #C9FFF2);
+			background-size: 400% 400%;
+			animation: gradient 3s ease infinite;
+			height: 100vh;
+		}
+
+		@keyframes gradient {
+			0% {
+				background-position: 0% 50%;
+			}
+
+			50% {
+				background-position: 100% 50%;
+			}
+
+			100% {
+				background-position: 0% 50%;
+			}
+		}
+
+		.form-wrapper {
+			display: table;
+			width: 35%;
+			margin: auto;
+		}
+
+		.form-box {
+			display: table-row;
+		}
+
+		label {
+			display: table-cell;
+			width: 140px;
+			text-align: right;
+			padding: 5px;
+			vertical-align: middle;
+		}
+
+		input,
+		select {
+			display: table-cell;
+			width: 200px;
+		}
+
+		button {
+			margin-top: 30px;
+			width: 200px;
+			background-color: #2675D5 ;
+			color: white;
+			border: none;
+			padding: 5px;
+			border-radius: 5px;
+		}
+
+		span {
+			font-size: 14px;
+		}
+	</style>
+	<link rel="preconnect" href="https://assets.website-files.com/">
+	<link rel="preload" as="image" href="https://assets.website-files.com/...hero.png"
+		imagesrcset="https://assets.website-files.com/...hero-p-800.png 800w, https://assets.website-files.com/...hero.png 1400w"
+		imagesizes="(max-width: 479px) 100vw, (max-width: 767px) 100, (max-width: 991px) 600px, 55vw">
+</head>
+
+<body bgcolor=”#899779">
+	<h1 align="middle">News Category Prediction</h1>
+
+	<form align="middle" action="/news-cat" method="POST">
+		<div class="form-wrapper">
+			<div class="form-box">
+				<label for="text">Paste News Exerpt</label>
+				<input type="text" id="text" name="text">
+			</div>
+</div>
+
+
+		<button type="submit" value="Submit"> Predict </button>
+	</form>
+</body>
+</head>
+</html>
